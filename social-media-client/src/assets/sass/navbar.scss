@@ -1,0 +1,56 @@
+.navbar {
+  width: 80%;
+  height: 12vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include media("<=phone") {
+    width: 90%;
+  }
+  @include media("<=tablet") {
+    width: 85%;
+  }
+  .brand {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .links {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      li {
+        margin-left: 20px;
+        a {
+          padding: 10px;
+          background-color: white;
+          border-radius: 40px;
+          color: #202020;
+          font-weight: bold;
+          transition: 200ms ease-in-out;
+          &:hover {
+            background-color: lighten($color: rgb(12, 12, 12), $amount: 10);
+            color: white;
+          }
+        }
+        button {
+          padding: 14px;
+          background-color: white;
+          border-radius: 40px;
+          border: none;
+          font-weight: bold;
+          font-size: 15px;
+          outline: none;
+          transition: 200ms ease-in-out;
+          &:hover {
+            background-color: lighten($color: rgb(12, 12, 12), $amount: 10);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

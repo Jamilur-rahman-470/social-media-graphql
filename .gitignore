@@ -1,0 +1,12 @@
+#node_modules
+/social-media-client/node_modules/
+/social-media-server/node_modules/
+
+#cache & dist
+/social-media-client/.cache/
+/social-media-client/dist/
+
+#package-lock.json
+/social-media-client/package-lock.json
+/social-media-server/package-lock.json
+
