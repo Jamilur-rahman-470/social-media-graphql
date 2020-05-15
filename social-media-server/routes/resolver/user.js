@@ -49,7 +49,7 @@ module.exports = {
         if (!isEqual) {
             throw new Error('incorrect password')
         }
-
+ 
         const token = jwt.sign(
             {
                 userId: user.id,
@@ -88,6 +88,32 @@ module.exports = {
                 throw new Error('User does not exist')
             }
             return user
+        }catch(err){
+            throw err
+        }
+    },
+
+    updateUser: async (args) =>{
+        try {
+            const user = await User.findOne({_id: args.id})
+            if (!user) {
+                throw new Error('User does not exist')
+            }
+            user.name = args.name
+            user.bio = args.bio
+            user.address = {
+                city: args.city,
+                country: args.country
+            }
+            user.social = {
+                youtube: args.youtube,
+                linkedin: args.linkedin,
+                facebook: args.facebook,
+                twitter: args.twitter,
+            }
+
+            const newUser = await user.save()
+            return newUser
         }catch(err){
             throw err
         }

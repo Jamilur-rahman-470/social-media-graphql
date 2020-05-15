@@ -72,7 +72,7 @@ module.exports = buildSchema(
             deleteUser(id: ID!): User!
             deletePost(id: ID!): Post!
             updatePost(id: ID!): Post!
-            updateUser(id: ID): User!
+            updateUser(id: ID!, name: String!, bio: String!, city: String!, country: String!, youtube: String!, facebook: String!, linkedin: String!, twitter: String!): User!
         }
 
         schema {
@@ -80,4 +80,4 @@ module.exports = buildSchema(
             mutation: RootMutation
         }
     `
-)
+) 

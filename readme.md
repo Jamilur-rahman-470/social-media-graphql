@@ -16,7 +16,8 @@ The app is divided in two section
 2. Login
 3. Dashboard route protection
 4. Logout and basic UI
-
+5. Profile detail creation
+6. Dashboard view
 ### future updates - 
 
 1. Add post
@@ -24,7 +25,6 @@ The app is divided in two section
 3. Add comment
 4. upload image
 5. Add friends
-6. Profile detail creation
 
 ## Installation
 

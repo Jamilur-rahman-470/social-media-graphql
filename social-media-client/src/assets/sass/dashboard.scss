@@ -1,0 +1,32 @@
+.dashboard{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    @include media('<=phone'){
+        grid-template-columns: 1fr;
+    }
+    @include media('<=tablet'){
+        grid-template-columns: 1fr 1fr;
+    }
+    .user-info{
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: lighten($color: rgb(15, 15, 15), $amount: 5);
+        .avatar{
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: lighten($color: rgb(12,12,12), $amount: 20);
+        }
+        text-align: center;
+        .btn{
+            background: #121212;
+            padding: 10px;
+            
+        }
+    }
+}

@@ -1,6 +1,8 @@
 @import './mixin.scss';
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
 @import './navbar.scss';
+@import './dashboard.scss';
+
 body{
     font-family: 'Jost', sans-serif;
     background-color: rgb(12, 12, 12);
@@ -60,4 +62,35 @@ input{
     border: none;
     font-size: 16px;
     font-weight: 600;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: lighten($color: rgb(13, 13, 13), $amount: 5);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    @include media('<=phone'){
+        grid-template-columns: 1fr;
+    }
+}
+.btn{
+    background-color: lighten($color: #121212, $amount: 5);
+    padding: 15px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
 }

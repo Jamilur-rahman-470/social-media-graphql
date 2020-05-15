@@ -6,6 +6,7 @@ import SignUpPage from './views/sign-up-page'
 import Navbar from './components/navbar'
 import ProtectedRoute from './components/protected-route'
 import Dashboard from './views/dashboard'
+import EditProfile from './views/edit-profile'
 export const Root = () => {
     return (
         <div>
@@ -16,6 +17,8 @@ export const Root = () => {
                     <Route exact path='/sign-in' component={SignInPage} />
                     <Route exact path='/sign-up' component={SignUpPage} />
                     <ProtectedRoute exact path='/dashboard' component={Dashboard} />
+                    <ProtectedRoute exact path= '/edit-profile' component ={EditProfile}/>
+                     
                 </Switch>
             </BrowserRouter>
         </div>

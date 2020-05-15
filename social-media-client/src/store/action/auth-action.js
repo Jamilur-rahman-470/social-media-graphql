@@ -41,7 +41,7 @@ export const getUserById = (id) => dispatch =>{
                 bio: user.bio,
                 date: user.date,
                 email: user.email,
-                address: user.address,
+                address: user.address,  
                 social: user.social,
             }
         })
