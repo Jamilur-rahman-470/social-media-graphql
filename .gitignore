@@ -10,3 +10,4 @@
 /social-media-client/package-lock.json
 /social-media-server/package-lock.json
 
+.gitignore
