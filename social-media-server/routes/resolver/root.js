@@ -1,8 +1,9 @@
 const user = require('./user')
-
+const post = require('./post')
 
 const rootResolver = {
-    ...user
+    ...user,
+    ...post
 }
 
 module.exports = rootResolver

@@ -9,7 +9,7 @@ const persistConfig = {
     key: 'root',
     storage,
     whitelint: ['auth', 'user'],
-    blacklist: ['post']
+    blacklist: []
 }
 
 const persistedreducer = persistReducer(persistConfig, rootReducer)
