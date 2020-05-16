@@ -18,23 +18,23 @@ The app is divided in two section
 4. Logout and basic UI
 5. Profile detail creation
 6. Dashboard view
+7. Create and Get Posts Added
 ### future updates - 
 
-1. Add post
-2. Like a post
-3. Add comment
-4. upload image
-5. Add friends
+1. Like a post
+2. Add comment
+3. upload image
+4. Add friends
 
 ## Installation
 
 clone the repo & cd into project
 
 running the react-app | Front-end
-`cd social-media-client && npm install`
-`parcel index.html`
+>`cd social-media-client && npm install`
+>`parcel index.html`
 
 running the node-app | Back-end
 
-`cd social-media-server && npm install`
-`nodemon server`
+>`cd social-media-server && npm install`
+>`nodemon server`
