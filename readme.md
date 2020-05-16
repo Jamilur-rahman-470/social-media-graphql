@@ -31,10 +31,10 @@ The app is divided in two section
 clone the repo & cd into project
 
 running the react-app | Front-end
->`cd social-media-client && npm install`
+>`cd social-media-client && npm install` <br/>
 >`parcel index.html`
 
 running the node-app | Back-end
 
->`cd social-media-server && npm install`
+>`cd social-media-server && npm install` <br/>
 >`nodemon server`
